@@ -28,7 +28,7 @@ function hello() {
 
     for (let i = 0; i < DATA.length; i++) {
         document.getElementById('ol').innerHTML +=
-            "<input type='checkbox' onclick='if(this.checked){lining(this.id)}else{lininh1(this.id)}' id=" + i + "><span>" + DATA[i] + "</span> <button onclick='edit(this.id)' id=" + i + ">edit</button><button onclick='add(this.id)' id=" + i + ">change</button><button onclick='del(this.id)' id=" + i + ">del</button><br>";
+            "<div id=" + i + "><input type='checkbox' onclick='if(this.checked){lining(this.id)}else{lininh1(this.id)}' id=" + i + "><span>" + DATA[i] + "</span> <button onclick='edit(this.id)' id=" + i + ">edit</button><button onclick='add(this.id)' id=" + i + ">change</button><button onclick='del(this.id)' id=" + i + ">del</button><br></div>";
     }
 
     document.getElementById('input').value = '';
@@ -54,6 +54,7 @@ function add(id) {
 
 function del(id) {
     document.getElementById(id).innerHTML = '';
+    DATA.splice(1, id);
 }
 
 function remove() {
