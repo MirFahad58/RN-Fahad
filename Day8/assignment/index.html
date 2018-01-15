@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fast Food and tea canteen System</title>
+    <link rel="stylesheet" href="boot/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="bootbox.min.js"></script>
+</head>
+
+
+
+<body>
+    <button type="button" class="btn btn-large btn-block btn-primary" disabled>Change</button>
+    <a href="SignIn.html"><button id="b5" type="button" class="btn btn-sm btn-danger">Log Out-<span class="glyphicon glyphicon-off"></span></button></a>
+    <div id="side1">
+        <form>
+            <div id="cust">
+                <input type="text" id="customer" placeholder="Customer Name" onchange="Cus()" required><br><br>
+            </div>
+            <div id="add">
+            </div>
+            <br>
+            <button type="button" id="b" onclick="addOrder()" class="btn btn-sm btn-success">
+                Add items to order <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            </button>
+            <br><br>
+            <div id="post">
+            </div>
+        </form>
+    </div>
+    <div id="side3">
+
+    </div>
+    <div id="side2">
+
+    </div>
+    <div id="side4">
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
