@@ -1,13 +1,15 @@
 let SignUpObj = [];
+
 function handler(e) {
     // remove this handler
     e.target.removeEventListener(e.type, arguments.callee);
-    data={};
+    data = {};
     data.username = 'admin';
-    data.password = 'admin';  
+    data.password = 'admin';
     SignUpObj.push(data);
     localStorage.setItem('hello', JSON.stringify(SignUpObj));
 }
+
 function ChangePrice() { //Changing Price HTML
     document.getElementById('change').innerHTML = '';
     document.getElementById('change').innerHTML = '<h4>To Change The price </h4><br><input type="text" id="itemname1" placeholder="Item Name" required><br><br><input type="number" id="number1" min="1" placeholder="Enter Price" required><br><br><input type="submit" id="b2" class="btn btn-sm btn-success" onclick="ChangePriceA()" value="Change">';
@@ -305,7 +307,7 @@ function DelItem1() { //To Delete Items Java Script
 }
 
 function ShowOrders() {
-    document.getElementById('change').innerHTML='';
+    document.getElementById('change').innerHTML = '';
     Orders = JSON.parse(localStorage.allorders);
     Orders.forEach(function(item) {
         document.getElementById('change').innerHTML += '<span id="span1"> Customer Name---' + item.Cname + '</span><span id="span1"> Total Rupies---' + item.TRupies + '</span><br>'
