@@ -1,13 +1,13 @@
 import React from "react";
 import {
-  StyleSheet,
+StyleSheet,
   Text,
   View,
   TouchableOpacity,
   Image,
   TextInput,
   KeyboardAvoidingView,
-  AsyncStorage
+  AsyncStorage  
 } from "react-native";
 
 import { StackNavigator } from "react-navigation";
@@ -41,7 +41,7 @@ export default class extends React.Component {
   };
   render() {
     return (
-      <KeyboardAvoidingView behavior="padding" style={styles.container}>
+      <View behavior="padding" style={styles.container}>
         <View style={styles.Img}>
           <Image
             style={{ width: 40, height: 70 }}
@@ -87,7 +87,7 @@ export default class extends React.Component {
             <Text style={styles.signupButton}> Signup</Text>
           </TouchableOpacity>
         </View>
-      </KeyboardAvoidingView>
+      </View>
     );
   }
 }

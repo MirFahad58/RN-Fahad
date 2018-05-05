@@ -1,0 +1,4 @@
+#Mon Apr 23 13:12:24 PKT 2018
+base.0=D\:\\learn\\ReACT Native\\Day27\\MAlaram\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=D\:\\learn\\ReACT Native\\Day27\\MAlaram\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

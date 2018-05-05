@@ -52,7 +52,7 @@ export default class Signup extends React.Component {
 
   render() {
     return (
-      <KeyboardAvoidingView behavior="padding" style={styles.container}>
+      <View behavior="padding" style={styles.container}>
         <View style={styles.Img}>
           <Image
             style={{ width: 40, height: 70 }}
@@ -63,6 +63,8 @@ export default class Signup extends React.Component {
         <View style={styles.Inp}>
           <TextInput
             style={styles.inputBox}
+            keyboardType="email-address"
+            require
             onChangeText={user => this.setState({ username: user })}
             underlineColorAndroid="rgba(0,0,0,0)"
             placeholder="Username"
@@ -76,6 +78,7 @@ export default class Signup extends React.Component {
             placeholder="Password"
             secureTextEntry={true}
             placeholderTextColor="#ffffff"
+            selectionColor="#fff"
           />
           <TouchableOpacity style={styles.button} onPress={this.SignUp}>
             <Text style={styles.buttonText}>SignUp</Text>
@@ -89,7 +92,7 @@ export default class Signup extends React.Component {
             <Text style={styles.signinButton}> SignIn</Text>
           </TouchableOpacity>
         </View>
-      </KeyboardAvoidingView>
+      </View>
     );
   }
 }
